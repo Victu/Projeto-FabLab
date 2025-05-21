@@ -1,0 +1,396 @@
+.card-ol {
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: auto;
+    text-align: justify;
+    list-style-type: none;
+  }
+
+  /* Para classificar as tag a sem efeito */
+.sem-efeito:hover {
+    transform: none;
+  }
+
+  /* Identação de parágrafos */
+.ident {
+    text-indent: 28px;
+  }
+
+.area h1 {
+    background-color: #4d7bac;
+    border-radius: 15px;
+    color: aliceblue;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.area h2 {
+    text-align: left;
+    font-size: larger;
+}
+
+/* Efeito de realce para seções alvo */
+.area.fadeout {
+  animation: fadeRealceOut 3s ease forwards;
+  background-color: gray;
+}
+
+.card-ol {
+  margin-top: 1em;
+  margin-left: 3em;
+  margin-right: auto;
+  text-align: justify;
+  list-style-type: none;
+}
+
+.card-ol li {
+  background-color: #60cae6;
+  padding: 5px 10px;
+  margin: 3px 0;
+  border-radius: 15px 5px 20px;
+}
+
+/* Para classificar as tag a sem efeito */
+.sem-efeito:hover {
+  transform: none;
+}
+
+/* Identação de parágrafos */
+.ident {
+  text-indent: 22px;
+}
+
+.img_home {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  height: auto;
+  min-height: 500px;
+  padding: 20px;
+  box-shadow: -1px 4px 18px black;
+}
+
+.img_home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca o slider atrás do conteúdo */
+}
+
+.slide-topo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-topo.active {
+  opacity: 1;
+}
+
+/* Container do texto */
+.box-parag {
+  width: 90%;
+  max-width: 570px;
+  background-color: rgba(39, 44, 44, 0.651);
+  position: relative;
+  margin-bottom: 60px;
+  border-radius: 4px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#titulo_intro {
+  font-size: 1.6em;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0;
+  color: #55b9d4;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 
+  -1px -1px 2px black,
+  1px -1px 2px black,
+  -1px 1px 2px black,
+  1px 1px 2px black;
+}
+
+#texto-digitacao {
+  white-space: nowrap; /* Impede quebra de linha */
+  overflow: hidden; /* Garante que o texto fique escondido inicialmente */
+  border-right: .15em solid; /* Efeito cursor */
+  padding-right: 0.1em;
+  animation: typing 4s steps(40, end), blink-caret 1s step-end infinite; /* Cursor pisca */
+}
+
+/* Digitação */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Cursor pisca */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: aliceblue; }
+}
+
+/* Estilizando o parágrafo de dentro do container */
+.card-p {
+  color: white;
+  text-align: justify;
+  padding: 0 10px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Estilizando o verdinho */
+.verdinho {
+  font-size: 1.5em;
+  color: #55b9d4;
+  display: block;
+}
+
+.caixa2 {
+  width: 100%;
+  height: 8px;
+  background: radial-gradient(circle at center, #55b9d4, #1a81db);
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+#digital-lab {
+  margin-bottom: 180px;
+}
+
+/* Configuração de responsividade */
+@media (max-width: 768px) {
+  .img_home {
+    min-height: 400px;
+    padding: 10px;
+  }
+  
+  .box-parag {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  
+  #titulo_intro {
+    font-size: 1.4em;
+  }
+  
+  .verdinho {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .img_home {
+    min-height: 300px;
+  }
+  
+  #titulo_intro {
+    font-size: 1.2em;
+  }
+  
+  .verdinho {
+    font-size: 1.1em;
+  }
+  
+  .card-p {
+    font-size: 0.9em;
+    padding: 0 5px;
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  70% { background-position: 100% 50%; }
+  120% { background-position: 0% 50%; }
+}
+
+/* Parte do nome dos desenvolvedores */
+
+/* Container geral */
+.container-dev {
+  display: flex;
+  gap: 5px;
+}
+
+/* Configurando card de cada dev */
+.card-dev {
+  flex: 1;  /* Todos os cards terão a mesma proporção de tamanho */
+  height: 100px;
+  overflow: hidden;
+  background: linear-gradient(237.58deg, #4d7bac, #1a1d3e);
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 0 6px 10px rgba(17, 10, 10, 0.7);
+  padding: 12px;
+}
+
+.card-dev h3 {
+  padding-left: 4px;
+  position: relative;
+  color: aliceblue; 
+}
+
+.card-dev:hover {
+  flex: 1.7; /* Ao passar o mouse ele tera um tamanho de 1 cards */
+  background: linear-gradient(237.58deg, #1a1d3e -122.16%, #01baef);
+  cursor: pointer;
+  transition: 1s;
+}
+
+/* Estilo da página sobre nós */
+
+/* Imagem de sobre nós */
+.img_sobre {
+  padding: 20px;
+  height: auto;
+  min-height: 500px;  
+  background: silver url('../img/sobreNos.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  box-shadow: -1px 4px 18px black;
+}
+
+/* Estilizando o parágrafo de dentro do container em sobre */
+.card-sobre {
+  width: auto;
+  color: #1a81db;
+  text-align: justify;
+  padding: 30px 30px;
+  font-size: 2em;
+  margin-bottom: 70px;
+  background-color: #00000082;
+  color: #55b9d4;  
+  border-radius: 40px 12px;
+  box-shadow: 0 6px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Estilizando subtitulo dos desenvolvedores */
+div.subtitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+span.center {
+  color: rgb(146, 142, 142);
+  font-style: italic;
+  font-size: 0.8em;
+}
+/* ------------------------------- */
+
+
+
+/* ------------------------------------ */
+
+/* Estilo do formulário Sobre */
+
+/* Estilo geral do conteiner pai */
+section.conteiner-box{
+  max-width: 100%;
+  margin: 40px auto;
+
+  background-image: url('../img/sigh-in-sobre.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+
+  padding: 35px;
+  box-shadow: 0 5px 5px rgba(22, 14, 14, 0.603);
+  border-radius: 25px;
+  position: relative;
+  
+}
+
+/* Seletor específico do container de formulário */
+section.conteiner-box .form-container{
+  max-width: 230px;
+  height: auto;
+  background-color: #1a1d3e9d;
+  padding: 15px;
+  line-height: 1.4em;
+  color: #FFF;
+  box-shadow: 0 5px 15px rgba(219, 218, 218, 0.658);
+  border-radius: 12px;
+  z-index: 2;
+  position: relative;   
+}
+
+/* Seletor para estilizar o título no form */
+section.conteiner-box .form-container h2{
+  font-size: 1em;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+
+}
+
+/* Seletor para estilizar o parágrafo do form */
+section.conteiner-box .form-container p{
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Seletor para pegar as tag input e select para que tenha a mesma largura do pai (.form-container) */
+section.conteiner-box .form-container input, section.conteiner-box .form-container select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* Estilo geral para pegar o button de submit. Por padrão já vem com um estilo */
+input[type="submit"]{
+  color: white;
+  background-color: #1a1d3e;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(219, 218, 218, 0.658);
+  border-radius: 14px 5px;
+}
+
+/* Deixando a imagem do fundo escura */
+section.conteiner-box > .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000be;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Desabilitando a aparência da seta do botão de select nos principais navegadores, pois vamos inserir um ícone nosso por padrão */
+.form-container select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-image: url('../img/arrow-down-short.ico');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px);
+  background-size: 25px;
+  cursor: pointer
+}
